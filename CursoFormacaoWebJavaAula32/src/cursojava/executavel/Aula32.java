@@ -1,0 +1,70 @@
+package cursojava.executavel;
+
+import javax.swing.JOptionPane;
+
+import cursojava.classes.Aluno;
+
+public class Aula32 {
+	
+	/* Aula 32 : Criando a Lista de Disciplinas no Objeto Aluno */
+	
+	 public static void main(String[] args) {
+			
+	    	//Método para Entrada de Dados no Teclado
+	    	String nome = JOptionPane.showInputDialog("Qual o nome do aluno?");
+	    	String idade = JOptionPane.showInputDialog("Qual a idade do aluno?");
+	    	String dataNascimento = JOptionPane.showInputDialog("Qual é a dade de nascimento do aluno?");
+	    	String rg = JOptionPane.showInputDialog("Qual é o Registro Geral do aluno?");
+	    	String cpf = JOptionPane.showInputDialog("Qual é o CPF do aluno?");
+	    	String nomeMae = JOptionPane.showInputDialog("Qual é o nome da Mãe do aluno?");
+	    	String nomePai = JOptionPane.showInputDialog("Qual é o nome do Pai do aluno?");
+	    	String dataMatricula = JOptionPane.showInputDialog("Qual é data de matrícula do aluno?");
+	    	String serieMatriculada = JOptionPane.showInputDialog("Qual é a série matriculada do aluno?");
+	    	String escola = JOptionPane.showInputDialog("Qual é a escola do aluno?");
+	    	
+	    	String disciplina1 = JOptionPane.showInputDialog("Disciplina 1?");
+	    	String note1 = JOptionPane.showInputDialog("Qual é a nota 1 do aluno?");
+	    	
+	    	String disciplina2 = JOptionPane.showInputDialog("Disciplina 2?");
+	    	String note2 = JOptionPane.showInputDialog("Qual é a nota 2 do aluno?");
+	    	
+	    	String disciplina3 = JOptionPane.showInputDialog("Disciplina 3?");
+	    	String note3 = JOptionPane.showInputDialog("Qual é a nota 3 do aluno?");
+	    	
+	    	String disciplina4 = JOptionPane.showInputDialog("Disciplina 4?");
+	    	String note4 = JOptionPane.showInputDialog("Qual é a nota 4 do aluno?");
+	    	
+	    	
+	    	// aluno1 é uma referência para o objeto aluno
+			// new Aluno() é uma instância para o objeto aluno
+	    			
+		Aluno aluno1 = new Aluno(); //Aqui será o João
+		
+		aluno1.setNome(nome);
+		
+		//Método Integer.valueOf para converter String em número inteiro
+		aluno1.setIdade(Integer.valueOf(idade));
+		
+		aluno1.setDataNascimento(dataNascimento);
+		aluno1.setRegistroGeral(rg);
+		aluno1.setNumeroCpf(cpf);
+		aluno1.setNomeMae(nomeMae);
+		aluno1.setNomePai(nomePai);
+		aluno1.setDataMatricula(dataMatricula);
+		aluno1.setSerieMatriculado(serieMatriculada);
+		aluno1.setNomeEscola(escola);
+	    
+		
+		  	System.out.println(aluno1.toString()); //Descrição do objeto na memória
+		    System.out.println("Média do Aluno = " + aluno1.getMediaNota());
+		    System.out.println("Resultado é = " +aluno1.getAlunoAprovado2());
+	    	
+	    	    	
+	   }
+
+
+	}
+
+	
+	
+
